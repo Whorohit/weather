@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="navbar"><a href="index.html">Home</a></li>
+            <li class="navbar"><a href="index.html">About</a></li>
+            <li class="navbar"><a href="index.html">Help</a></li>
+            <li class="navbar"><a href="index.html">Query</a></li>
+            <li class="input">Serach City <input type="search" name="cityname" id="cityname"></li>
+            <li class="input1"><input type="submit" value="Search"b id="input1"></li>
+        </ul>
+    </nav>
+    <div class="weatherl">
+        <h3>
+            this website provide realtime overall weather condition of city
+        </h3>
+        <h3>
+            the Weather of <span id="City" class="city"></span>
+        </h3>
+    </div>
+    <div class="box">
+        <div class="weather" id="weather-1">
+            <h3>Temperature</h3>
+            <h5>The temperatue is <span id="temp"></span>&#8451;</h5>
+            <h5>The min temperatue is <span id="min_temp"></span>&#8451;</h5>
+            <h5>The max temperatue is <span id="max_temp"></span>&#8451;</h5>
+        </div>
+        <div class="weather" id="weather-2">
+            <h3>Wind</h3>
+            <h5>The Wind degrees is <span id="wind_degrees"></span>&#176;</h5>
+            <h5>The Wind speed is <span id="wind_speed"></span>km/hr</h5>
+            <h5>The Sunrise time is <span id="sunrise"></span></h5>
+            <h5>The Sunset time is <span id="sunset"></span></h5>
+        </div>
+        <div class="weather" id="weather-3">
+            <h3>Humidity</h3>
+            <h5>The Humidity is <span id="humidity"></span>%</h5>
+            <h5>The Cloudpct is <span id="cloud_pct"></span>%</h5>
+            <h5>The Feels like is <span id="feels_like"></span></h5>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>city</th>
+                <th>temp</th>
+                <th>max temp</th>
+                <th>min temp</th>
+                <th>sunrise</th>
+                <th>sunset</th>
+                <th>cloud pct</th>
+                <th>feels like</th>
+                <th>humidity</th>
+                <th>wind degrees</th>
+                <th>wind speed</th>
+            <tr></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Delhi</td>
+                <td id="temp1">2</td>
+                <td id="max_temp1">4</td>
+                <td id="min_temp1">4</td>
+                <td id="sunrise1"></td>
+                <td id="sunset1"></td>
+                <td id="cloud_pct1"></td>
+                <td id="feels_like1"></td>
+                <td id="humidity1"></td>
+                <td id="wind_degrees1"></td>
+                <td id="wind_speed1"></td>
+            </tr>
+            <tr>
+                <td>New york</td>
+                <td id="temp2"></td>
+                <td id="max_temp2"></td>
+                <td id="min_temp2"></td>
+                <td id="sunrise2"></td>
+                <td id="sunset2"></td>
+                <td id="cloud_pct2"></td>
+                <td id="feels_like2"></td>
+                <td id="humidity2"></td>
+                <td id="wind_degrees2"></td>
+                <td id="wind_speed2"></td>
+            </tr>
+            <tr>
+                <td>Mumbai</td>
+                <td id="temp3"></td>
+                <td id="max_temp3"></td>
+                <td id="min_temp3"></td>
+                <td id="sunrise3"></td>
+                <td id="sunset3"></td>
+                <td id="cloud_pct3"></td>
+                <td id="feels_like3"></td>
+                <td id="humidity3"></td>
+                <td id="wind_degrees3"></td>
+                <td id="wind_speed3"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="server.js"></script>
+
+</html>
